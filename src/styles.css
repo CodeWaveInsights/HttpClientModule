@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+.product-info h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
