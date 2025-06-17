@@ -1,1 +1,13 @@
-<p>product-list works!</p>
+<div class="container" *ngIf="isLoading">Loading products--</div>
+<div class="product-grid" *ngIf="!isLoading">
+  <div class="product-card" *ngFor="let product of products">
+    <img [src]="product.image" alt="productImage">
+    <div class="product-info">
+      <h3>{{product.title}}</h3>
+      <p>Price: {{product.price | currency}}</p>
+      <p>{{product.description | slice: 0: 100}}</p>
+      <div class="ratting">Rating: {{product.rating.rate}} {{product.rating.count}}</div>
+      <button class="buy-btn" type="submit">Add to Cart</button>
+    </div>
+  </div>
+</div>

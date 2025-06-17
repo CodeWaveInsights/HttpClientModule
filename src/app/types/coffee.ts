@@ -2,7 +2,7 @@ export interface Coffee {
 	id: number;
     title: string;
     price: number;
-	category: string;
+	  category: string;
     description: string;
     image: string;
     rating: Rating;
